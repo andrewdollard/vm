@@ -2,8 +2,6 @@ require_relative 'constants'
 class VM
 
   def initialize(mem)
-    raise "invalid input" unless mem.length == 20
-
     @mem = mem
     @pc = 0
     @registers = {
